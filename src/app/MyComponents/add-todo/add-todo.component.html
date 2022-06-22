@@ -1,0 +1,14 @@
+<div class="container">
+        <h4 class="my-2 text-decoration-underline">Add a Todo</h4>
+    <form ngNativeValidate (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="desc" class="form-label">Description</label>
+            <textarea class="form-control" [(ngModel)]="desc" id="desc" name="desc" aria-label="With textarea" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary my-4 w-100 text-center">Add Todo</button>
+    </form>
+</div>
